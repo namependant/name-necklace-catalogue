@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Personalised Name Jewellery Catalogue</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Personalised Name Jewellery Catalogue</h1>
+</header>
+
+<main class="grid">
+
+<div class="item" onclick="openViewer('A-001','4.2g','images/design1.jpg')">
+  <img src="images/design1.jpg">
+  <div class="meta">Code: A-001<br>Wt: 4.2g</div>
+</div>
+
+<div class="item" onclick="openViewer('A-002','3.9g','images/design2.jpg')">
+  <img src="images/design2.jpg">
+  <div class="meta">Code: A-002<br>Wt: 3.9g</div>
+</div>
+
+</main>
+
+<div id="viewer" onclick="closeViewer()">
+  <img id="viewerImg">
+  <div id="viewerMeta"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
