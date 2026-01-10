@@ -59,3 +59,10 @@ header {
   margin-top: 14px;
   font-size: 18px;
 }
+.item img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  background: #fff;
+}
+
