@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personalised Name Jewellery Catalogue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Personalised Name Jewellery Catalogue</h1>
+
+<div class="gallery" id="gallery"></div>
+
+<script>
+const totalSlots = 400;
+
+for(let i = 1; i <= totalSlots; i++){
+  const img = document.createElement("img");
+  img.src = `images/design${i}.jpg`;
+  img.onerror = () => img.style.display = "none";
+  document.getElementById("gallery").appendChild(img);
+}
+</script>
+
+</body>
+</html>
